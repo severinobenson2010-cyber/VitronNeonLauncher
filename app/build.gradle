@@ -1,11 +1,10 @@
-
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.vitron.neonlauncher'
+    namespace 'com.vitron.neonlauncher'  // <-- THIS LINE FIXES IT
     compileSdk 34
 
     defaultConfig {
@@ -17,10 +16,10 @@ android {
     }
 
     buildTypes {
+        debug { }
         release {
             minifyEnabled false
         }
-        debug { }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
