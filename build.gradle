@@ -1,9 +1,13 @@
 buildscript {
-   repositories { 
-    google() 
-    mavenCentral() 
-}
+    repositories { 
+        google() 
+        mavenCentral() 
+    }
     dependencies { classpath 'com.android.tools.build:gradle:8.2.0' }
+}
+
+plugins {
+    id 'org.jetbrains.kotlin.android' version '1.9.10' apply false
 }
 
 allprojects {
@@ -11,7 +15,4 @@ allprojects {
         google()
         mavenCentral()
     }
-}
-plugins {
-    id 'org.jetbrains.kotlin.android' version '1.9.10' apply false
 }
