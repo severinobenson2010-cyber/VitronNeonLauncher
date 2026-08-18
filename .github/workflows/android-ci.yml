@@ -17,6 +17,8 @@ jobs:
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v3
+      - name: Verify gradlew permissions
+        run: ls -la ./gradlew
       - name: Build APK
         run: ./gradlew assembleDebug
       - name: Upload APK
