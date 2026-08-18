@@ -19,11 +19,6 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       
-      - name: Setup Gradle
-        uses: gradle/gradle-build-action@v3
-        env:
-          JAVA_HOME: ${{ env.JAVA_HOME }}
-      
       - name: Build APK
         run: ./gradlew assembleDebug
         env:
