@@ -1,0 +1,5 @@
+* text=auto
+
+# Gradle wrapper
+gradlew text eol=lf diff=sh
+gradlew.bat text eol=crlf diff=batch
